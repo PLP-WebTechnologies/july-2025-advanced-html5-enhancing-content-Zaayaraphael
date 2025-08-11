@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive -->
+    <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+    <h1>Enhanced HTML5 Content & Forms</h1>
+
+    <!-- Lists Section -->
+    <section>
+        <h2>Popular Web Development Skills</h2>
+        <!-- Unordered list -->
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+
+        <h3>Learning Steps</h3>
+        <!-- Ordered list -->
+        <ol>
+            <li>Understand the basics of HTML.</li>
+            <li>Style your page with CSS.</li>
+            <li>Add interactivity with JavaScript.</li>
+            <li>Build projects to practice skills.</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Course Schedule</h2>
+        <!-- Table for structured data -->
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Topic</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>HTML Basics</td>
+                <td>2 Hours</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>CSS Fundamentals</td>
+                <td>3 Hours</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>JavaScript Introduction</td>
+                <td>3 Hours</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Learning Resources</h2>
+        <!-- Image -->
+        <img src="https://via.placeholder.com/600x300" alt="Placeholder image of coding">
+        <br>
+        <!-- Video -->
+        <video controls width="400">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <!-- Audio -->
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <!-- HTML5 Form -->
+        <form action="#" method="post">
+            
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +2348012345678" pattern="^\+?\d{10,15}$" required><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+            </fieldset>
+
+            <!-- Account Details -->
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required minlength="5"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6"><br><br>
+
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>
+                    <input type="checkbox" name="newsletter" checked> Subscribe to newsletter
+                </label><br>
+
+                <label>
+                    <input type="radio" name="contact" value="email" required> Contact me by Email
+                </label><br>
+                <label>
+                    <input type="radio" name="contact" value="phone" required> Contact me by Phone
+                </label><br><br>
+
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" placeholder="Write your message here..." rows="4"></textarea>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+</body>
+      </html>
